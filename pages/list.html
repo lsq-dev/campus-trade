@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳蚤市场 - CampusTrade</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="list-page">
+    <header></header>
+
+    <main class="container">
+        <h2 class="section-title">全部商品</h2>
+
+        <!-- 筛选表单 -->
+        <div class="filter-section">
+            <!-- 分类筛选 -->
+            <div class="filter-group">
+                <label for="category-filter">分类筛选：</label>
+                <select id="category-filter">
+                    <option value="all">全部</option>
+                    <option value="书籍教材">书籍教材</option>
+                    <option value="数码电子">数码电子</option>
+                    <option value="生活日用">生活日用</option>
+                    <option value="体育用品">体育用品</option>
+                </select>
+            </div>
+
+            <!-- 成色筛选（新加） -->
+            <div class="filter-group">
+                <label for="condition-filter">成色筛选：</label>
+                <select id="condition-filter">
+                    <option value="all">全部</option>
+                    <option value="9成新">9成新</option>
+                    <option value="8成新">8成新</option>
+                    <option value="7成新">7成新</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!-- 商品列表容器 -->
+        <div id="product-list" class="product-grid">
+            <p class="loading">正在加载数据...</p>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

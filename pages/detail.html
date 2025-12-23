@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情 - CampusTrade</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="detail-page">
+    <header></header>
+
+    <main class="container">
+        <div class="detail-wrapper">
+            <div class="detail-left">
+                <img id="detail-img" src="" alt="商品图片">
+            </div>
+            <div class="detail-right">
+                <h1 id="detail-title">加载中...</h1>
+                <p id="detail-category" style="color: #666; margin-top: 10px;"></p>
+                <div class="detail-price" id="detail-price"></div>
+
+                <div style="background: #f9f9f9; padding: 15px; border-radius: 8px;">
+                    <h3 style="margin-bottom: 10px;">商品描述</h3>
+                    <p id="detail-desc" style="line-height: 1.8;"></p>
+                </div>
+
+                <p id="detail-seller" style="margin-top: 20px; font-weight: bold;"></p>
+
+                <button class="btn-contact" onclick="alert('已发送私信给卖家！')">联系卖家</button>
+                <hr style="margin: 30px 0;">
+
+                <div class="comment-box">
+                    <h3>留言板</h3>
+
+                    <textarea id="comment-input" placeholder="请输入留言内容..." rows="4"
+                        style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+
+                    <button onclick="addComment()" class="btn-contact">发布留言</button>
+
+                    <ul id="comment-list" style="margin-top: 20px;"></ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

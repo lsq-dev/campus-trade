@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "title": "微积分教材 (第8版) 同济大学出版",
+    "price": 35.00,
+    "originalPrice": 120.00,
+    "category": "书籍教材",
+    "image":  "../images/m2.jpg",
+    "description": "几乎全新，内页无划痕。适合大一高数课程，期末复习必备。",
+    "sellerName": "陈同学",
+    "sellerAvatar": "https://picsum.photos/id/64/100/100",
+    "publishDate": "2023-10-01",
+    "condition": "95新"
+  },
+  {
+    "id": "2",
+    "title": "索尼 WH-1000XM4 降噪耳机",
+    "price": 850.00,
+    "originalPrice": 1999.00,
+    "category": "数码电子",
+    "image": "../images/m5.jpg",
+    "description": "降噪效果极佳，电池续航依旧给力。附带原装收纳盒。",
+    "sellerName": "李大卫",
+    "sellerAvatar": "https://picsum.photos/id/91/100/100",
+    "publishDate": "2023-09-28",
+    "condition": "8成新"
+  },
+  {
+    "id": "3",
+    "title": "宿舍神器：实木护眼台灯",
+    "price": 45.00,
+    "originalPrice": 120.00,
+    "category": "生活日用",
+    "image": "../images/m6.jpg",
+    "description": "暖光护眼，三档调节，非常适合宿舍熄灯后学习使用。",
+    "sellerName": "张小雅",
+    "sellerAvatar": "https://picsum.photos/id/177/100/100",
+    "publishDate": "2023-10-02",
+    "condition": "9成新"
+  },
+  {
+    "id": "4",
+    "title": "斯伯丁室内篮球",
+    "price": 60.00,
+    "originalPrice": 180.00,
+    "category": "体育用品",
+    "image": "../images/m15.webp",
+    "description": "手感很好，只在体育馆打过几次。",
+    "sellerName": "王凯",
+    "sellerAvatar": "https://picsum.photos/id/338/100/100",
+    "publishDate": "2023-09-15",
+    "condition": "7成新"
+  },
+  {
+    "id": "5",
+    "title": "MacBook Pro 铝合金散热支架",
+    "price": 40.00,
+    "originalPrice": 99.00,
+    "category": "数码电子",
+    "image": "../images/m1.jpg",
+    "description": "全铝合金材质，非常稳固，有助于缓解颈椎疲劳。",
+    "sellerName": "吴珍妮",
+    "sellerAvatar": "https://picsum.photos/id/65/100/100",
+    "publishDate": "2023-10-03",
+    "condition": "99新"
+  },
+  {
+    "id": "6",
+    "title": "Nike 运动背包",
+    "price": 85.00,
+    "originalPrice": 299.00,
+    "category": "体育用品",
+    "image": "../images/m11.jpeg",
+    "description": "容量大，防水材质，适合平时上课或去健身房。",
+    "sellerName": "赵强",
+    "sellerAvatar": "https://picsum.photos/id/100/100/100",
+    "publishDate": "2023-10-05",
+    "condition": "9成新"
+  }
+]

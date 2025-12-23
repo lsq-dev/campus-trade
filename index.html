@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusTrade - 校园二手交易平台</title>
+    <!-- 引入 Google Fonts 提升美观度 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+</head>
+<body id="home-page">
+    <!-- 导航栏 (由 JS 动态渲染，方便统一管理) -->
+    <header></header>
+
+    <main class="container">
+        <!-- 轮播图区域 (原生 JS 实现，无插件) -->
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="images/m9.jpg" alt="Slide 1">
+                    <div class="carousel-overlay">
+                        <h2>欢迎新同学</h2>
+                        <p>低价教材，一站购齐，开启大学生活</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/m8.jpg" alt="Slide 2">
+                    <div class="carousel-overlay">
+                        <h2>数码回收计划</h2>
+                        <p>旧电脑、旧手机，安全交易，快速回血</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/m7.jpg" alt="Slide 3">
+                    <div class="carousel-overlay">
+                        <h2>毕业季大甩卖</h2>
+                        <p>带不走的青春，留给学弟学妹</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播图控制按钮 -->
+            <button class="carousel-btn prev-btn">❮</button>
+            <button class="carousel-btn next-btn">❯</button>
+            <div class="carousel-dots"></div>
+        </div>
+
+        <!-- 数据统计卡片 -->
+        <div class="stats-grid">
+            <div class="stat-card blue">
+                <h3>5,000+</h3>
+                <p>活跃学生用户</p>
+            </div>
+            <div class="stat-card green">
+                <h3>12,400</h3>
+                <p>已成交物品</p>
+            </div>
+            <div class="stat-card purple">
+                <h3>¥450k+</h3>
+                <p>累计节省金额</p>
+            </div>
+        </div>
+
+        <!-- 热门推荐 -->
+        <div class="section-header">
+            <h2 class="section-title">🔥 最新上架</h2>
+            <a href="pages/list.html" class="view-all">查看全部 &rarr;</a>
+        </div>
+
+        <!-- 商品网格容器 -->
+        <div id="featured-products" class="product-grid">
+            <!-- Loading 状态 -->
+            <div class="loading-spinner"></div>
+        </div>
+
+        <!-- 快速分类入口 -->
+        <div class="category-quick-links">
+            <h2>分类浏览</h2>
+            <div class="category-buttons">
+                <a href="pages/list.html?cat=书籍教材" class="btn-outline">书籍教材</a>
+                <a href="pages/list.html?cat=数码电子" class="btn-outline">数码电子</a>
+                <a href="pages/list.html?cat=体育用品" class="btn-outline">体育用品</a>
+                <a href="pages/list.html?cat=生活日用" class="btn-outline">生活日用</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 (由 JS 渲染) -->
+    <footer></footer>
+
+    <!-- 核心逻辑脚本 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

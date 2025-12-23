@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>发布商品</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="nav">
+    <div class="nav-container">
+        <div class="logo">校园二手</div>
+        <div class="nav-links">
+            <a href="../index.html">首页</a>
+            <a href="list.html">跳蚤市场</a>
+            <a href="publish.html" class="active">发布商品</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 发布商品主体 -->
+<div class="publish-page">
+    <div class="publish-card">
+        <h2 class="publish-title">发布商品</h2>
+
+        <div class="form-group">
+            <label>商品名称</label>
+            <input id="title" type="text" placeholder="请输入商品名称">
+        </div>
+
+        <div class="form-group">
+            <label>价格（元）</label>
+            <input id="price" type="number" placeholder="请输入价格">
+        </div>
+
+        <!-- ⭐ 新增：商品成色 -->
+        <div class="form-group">
+            <label>商品成色</label>
+            <select id="condition">
+                <option value="">请选择商品成色</option>
+                <option value="全新">全新</option>
+                <option value="9成新">9成新</option>
+                <option value="8成新">8成新</option>
+                <option value="7成新">7成新</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>联系方式</label>
+            <input id="contact" type="text" placeholder="微信 / 手机号">
+        </div>
+
+        <div class="form-group">
+            <label>商品描述</label>
+            <textarea id="desc" rows="4" placeholder="描述商品情况"></textarea>
+        </div>
+
+        <!-- 图片上传 -->
+        <div class="form-group">
+            <label>商品图片</label>
+            <input id="image" type="file" accept="image/*">
+            <img id="preview" class="img-preview" style="display:none;">
+        </div>
+
+        <button class="publish-btn" onclick="publish()">发布商品</button>
+    </div>
+</div>
+
+<script>
+    const user = JSON.parse(localStorage.getItem('campus_user'));
+    if (!user) {
+        alert('请先登录后再发布商品');
+        window.location.href = 'login.html';
+    }
+</script>
+
+<script src="../js/publish.js"></script>
+</body>
+</html>
